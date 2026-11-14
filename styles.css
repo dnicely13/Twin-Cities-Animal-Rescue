@@ -1,0 +1,159 @@
+/* ==========================================
+   Twin Cities Animal Rescue - Core Stylesheet
+   ========================================== */
+
+/* Global Reset & Box-Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base Body Styles & Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f9f9fb;
+}
+
+/* Header & Brand Navigation */
+header {
+    background-color: #ffffff;
+    border-bottom: 3px solid #2e7d32;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header img {
+    margin-bottom: 0.5rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #1b5e20;
+    margin-bottom: 1rem;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+}
+
+/* Main Content Wrapper */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+/* Section Styling */
+section {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #1b5e20;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+section p {
+    margin-bottom: 1.2rem;
+}
+
+/* Responsive Media Styling */
+img, picture img, video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Forms & Inputs */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 600px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+label {
+    font-weight: 600;
+    color: #333333;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #2e7d32;
+    box-shadow: 0 0 4px rgba(46, 125, 50, 0.3);
+}
+
+button[type="submit"] {
+    background-color: #2e7d32;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1b5e20;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2e7d32;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.95rem;
+}
