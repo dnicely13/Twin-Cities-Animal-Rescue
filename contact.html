@@ -46,18 +46,20 @@
         <!-- Interactive Form Section -->
         <section>
             <h2>Volunteer & Inquiry Form</h2>
-            <form action="#" method="POST">
+            <form id="contactForm" action="#" method="POST" novalidate>
                 <fieldset>
                     <legend>Contact Information & Interests</legend>
                     
                     <div>
-                        <label for="fullname">Full Name:</label>
-                        <input type="text" id="fullname" name="fullname" required>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name">
+                        <span id="nameError" style="color: red; display: block; font-size: 0.9rem;"></span>
                     </div>
 
                     <div>
                         <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email">
+                        <span id="emailError" style="color: red; display: block; font-size: 0.9rem;"></span>
                     </div>
 
                     <div>
@@ -82,11 +84,12 @@
 
                     <div>
                         <label for="message">Your Message:</label>
-                        <textarea id="message" name="message" rows="4" cols="30" required placeholder="How can we help you?"></textarea>
+                        <textarea id="message" name="message" rows="4" cols="30" placeholder="How can we help you?"></textarea>
                     </div>
 
                     <div>
                         <button type="submit">Submit Inquiry</button>
+                        <p id="formSuccess" style="color: green; font-weight: bold; margin-top: 10px;"></p>
                     </div>
                 </fieldset>
             </form>
@@ -97,6 +100,6 @@
     <footer>
         <p>&copy; 2026 Twin Cities Animal Rescue. All rights reserved.</p>
     </footer>
-
+    <script src="script.js" defer></script>
 </body>
 </html>
