@@ -190,3 +190,42 @@ footer {
 footer p {
   font-size: 0.9rem;
 }
+
+/* ==========================================
+   RESPONSIVE MEDIA QUERY (Mobile Portrait)
+   ========================================== */
+@media screen and (max-width: 768px) {
+  /* Stack header navigation vertically on mobile */
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* Adjust hero section padding for small screens */
+  .hero {
+    padding: 2.5rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  /* Force grid containers to single column */
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Ensure main container padding fits small viewports */
+  main {
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+}
